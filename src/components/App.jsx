@@ -1,4 +1,9 @@
 import "../scss/App.scss"
+import cover from '../images/cover.jpeg'
+import user from '../images/user.jpeg'
+
+
+
 
 function App() {
 
@@ -7,11 +12,11 @@ function App() {
   <body>
     <div className="container">
       <header className="header">
-        <p className="text">Proyectos Molones</p>
+        <p className="text"> <i className="fa-solid fa-laptop-code">Proyectos Molones</i></p>
       </header>
       <main className="main">
         <section className="preview">
-          <img className="image" src="./images/cover.jpeg" alt="" />
+          <img className="image" src= {cover} alt="" />
 
           <section className="autor">
             <section className="info-project">
@@ -32,7 +37,7 @@ function App() {
             </section>
 
             <section className="info-autor">
-              <img className="image" src="./images/user.jpeg" alt="" />
+              <img className="image" src={user} alt="" />
               <p className="job">Full Stack Developer</p>
               <p className="name">Emmelie Björklund</p>
             </section>
