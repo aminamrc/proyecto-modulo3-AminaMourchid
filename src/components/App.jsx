@@ -1,8 +1,7 @@
 import "../scss/App.scss"
 import cover from '../images/cover.jpeg'
 import user from '../images/user.jpeg'
-
-
+import logo from '../images/logo.png'
 
 
 function App() {
@@ -12,7 +11,8 @@ function App() {
   <body>
     <div className="container">
       <header className="header">
-        <p className="text"> <i className="fa-solid fa-laptop-code">Proyectos Molones</i></p>
+        <p className="text"> <i className="fa-solid fa-laptop-code"> Proyectos Molones </i> </p>
+        <img className="image" src= {logo} alt="" />
       </header>
       <main className="main">
         <section className="preview">
