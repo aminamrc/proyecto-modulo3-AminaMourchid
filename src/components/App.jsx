@@ -6,8 +6,8 @@ import logo from '../images/logo.png'
 
 function App() {
 
-  return <>
-  
+  return (
+  <>
   <body>
     <div className="container">
       <header className="header">
@@ -137,10 +137,8 @@ function App() {
       </main>
     </div>
   </body>
-  
-  
-  
   </>
+  )
 
 }
 
