@@ -11,8 +11,15 @@ function App() {
   <body>
     <div className="container">
       <header className="header">
+        <div className="nav"> 
         <p className="text"> <i className="fa-solid fa-laptop-code"> Proyectos Molones </i> </p>
         <img className="image" src= {logo} alt="" />
+        </div>
+        <div className="titles"> 
+        <h1> Proyectos Molones </h1>
+        <h3> Escaparate en linea para recoger ideas a traves de la tecnologia </h3>
+        <button> Ver proyectos </button>
+        </div>
       </header>
       <main className="main">
         <section className="preview">
@@ -136,6 +143,11 @@ function App() {
         </section>
       </main>
     </div>
+    <div>
+    <footer>
+        <img src={logo} alt="" />
+      </footer>
+      </div>
   </body>
   </>
   )
