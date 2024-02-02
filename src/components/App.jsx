@@ -1,16 +1,35 @@
-import "../scss/App.scss"
-import cover from '../images/cover.jpeg'
-import user from '../images/user.jpeg'
-import logo from '../images/logo.png'
-
+import "../scss/App.scss";
+// import cover from '../images/cover.jpeg';
+// import user from '../images/user.jpeg';
+import logo from '../images/logo.png';
+import Header from './Header';
+import Card from './Card';
+import Form from './Form';
+import Footer from "./Footer";
+import { useState } from "react";
 
 function App() {
+
+const [project,setProject] = useState ("");
+const [slogan,setslogan] = useState ("");
+const [repo,setRepo] = useState ("");
+const [demo,setDemo] = useState ("");
+const [tecno,setTecno] = useState ("");
+const [desc,setdesc] = useState ("");
+const [nameAuthor,setNameAuthor] = useState ("");
+const [job,setJob] = useState ("");
+
+
+// const handleProject = (ev) => {
+//   setProject(ev.target.value);
+// };
 
   return (
   <>
   <body>
     <div className="container">
-      <header className="header">
+       <Header/>
+      {/* <header className="header">
         <div className="nav"> 
         <p className="text"> <i className="fa-solid fa-laptop-code"> Proyectos Molones </i> </p>
         <img className="image" src= {logo} alt="" />
@@ -20,9 +39,10 @@ function App() {
         <h3> Escaparate en linea para recoger ideas a traves de la tecnologia </h3>
         <button> Ver proyectos </button>
         </div>
-      </header>
+      </header> */}
       <main className="main">
-        <section className="preview">
+        <Card/> 
+        {/* <section className="preview">   
           <img className="image" src= {cover} alt="" />
 
           <section className="autor">
@@ -49,9 +69,9 @@ function App() {
               <p className="name">Emmelie Björklund</p>
             </section>
           </section>
-        </section>
-
-        <section className="form">
+        </section> */}
+        <Form setProject={setProject}  />
+        {/* <section className="form">
           <h2 className="title">Información</h2>
 
           <section className="ask-info">
@@ -140,13 +160,14 @@ function App() {
             <span className=""> La tarjeta ha sido creada: </span>
             <a href="" className="" target="_blank" rel="noreferrer"> </a>
           </section>
-        </section>
+        </section> */}
       </main>
     </div>
     <div>
-    <footer>
+      <Footer/>
+    {/* <footer>
         <img src={logo} alt="" />
-      </footer>
+      </footer> */}
       </div>
   </body>
   </>
