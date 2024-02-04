@@ -1,6 +1,6 @@
 
 
-function Form(setProject) {
+function Form({setProject, setslogan, setRepo, setDemo, setTecno, setDesc, setNameAuthor, setJob}) {
   return (
     <>
       <section className="form">
@@ -27,6 +27,7 @@ function Form(setProject) {
               name="slogan"
               id="slogan"
               placeholder="Slogan"
+              onChange={(ev) => {setslogan (ev.target.value)}}
             />
             <input
               className="input"
@@ -34,6 +35,7 @@ function Form(setProject) {
               name="repo"
               id="repo"
               placeholder="Repo"
+              onChange={(ev) => {setRepo(ev.target.value)}}
             />
             <input
               className="input"
@@ -41,6 +43,7 @@ function Form(setProject) {
               placeholder="Demo"
               name="demo"
               id="demo"
+              onChange={(ev) => {setDemo(ev.target.value)}} 
             />
             <input
               className="input"
@@ -48,6 +51,7 @@ function Form(setProject) {
               placeholder="Tecnologías"
               name="technologies"
               id="technologies"
+              onChange={(ev) => {setTecno(ev.target.value)}}  
             />
             <textarea
               className="textarea"
@@ -55,7 +59,10 @@ function Form(setProject) {
               placeholder="Descripción"
               name="desc"
               id="desc"
-            ></textarea>
+              onChange={(ev) => {setDesc(ev.target.value)}}  
+            >
+
+            </textarea>
           </fieldset>
 
           <section className="ask-info">
@@ -70,6 +77,7 @@ function Form(setProject) {
               placeholder="Nombre"
               name="autor"
               id="autor"
+              onChange={(ev) => {setNameAuthor(ev.target.value)}}  
             />
             <input
               className="input"
@@ -77,6 +85,7 @@ function Form(setProject) {
               placeholder="Trabajo"
               name="job"
               id="job"
+              onChange={(ev) => {setJob(ev.target.value)}}  
             />
           </fieldset>
 

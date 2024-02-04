@@ -15,7 +15,7 @@ const [slogan,setslogan] = useState ("");
 const [repo,setRepo] = useState ("");
 const [demo,setDemo] = useState ("");
 const [tecno,setTecno] = useState ("");
-const [desc,setdesc] = useState ("");
+const [desc,setDesc] = useState ("");
 const [nameAuthor,setNameAuthor] = useState ("");
 const [job,setJob] = useState ("");
 
@@ -70,7 +70,8 @@ const [job,setJob] = useState ("");
             </section>
           </section>
         </section> */}
-        <Form setProject={setProject}  />
+        <Form setProject={setProject} setslogan={setslogan} setRepo={setRepo} setDemo={setDemo}
+        setTecno= {setTecno} setDesc={setDesc} setNameAuthor={setNameAuthor} setJob= {setJob} />
         {/* <section className="form">
           <h2 className="title">Información</h2>
 
