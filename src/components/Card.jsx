@@ -1,7 +1,7 @@
 import cover from '../images/cover.jpeg';
 import user from '../images/user.jpeg';
 
-function Card() {
+function Card({ project, slogan, tecno, desc, nameAuthor, job}) {
   return (
     <>
        <section className="preview">
@@ -12,23 +12,20 @@ function Card() {
               <p className="subtitle">Personal Project Card</p>
               <hr className="line" />
 
-              <h2 className="title">Elegant Workspace</h2>
-              <p className="slogan">Diseños Exclusivos</p>
-              <p className="desc">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Libero, delectus? Voluptates at hic aliquam porro ad suscipit
-                harum laboriosam saepe earum doloribus aperiam, ullam culpa
-                accusantium placeat odit corrupti ipsum!
+              <h2 className="title" > {project} </h2>
+              <p className="slogan"> {slogan}  </p>
+              <p className="desc"> {desc}
+                
               </p>
               <section className="technologies">
-                <p className="text">React JS, MongoDB</p>
+                <p className="text"> {tecno} </p>
               </section>
             </section>
 
             <section className="info-autor">
               <img className="image" src={user} alt="" />
-              <p className="job">Full Stack Developer</p>
-              <p className="name">Emmelie Björklund</p>
+              <p className="job"> {job} </p>
+              <p className="name"> {nameAuthor} </p>
             </section>
           </section>
         </section>

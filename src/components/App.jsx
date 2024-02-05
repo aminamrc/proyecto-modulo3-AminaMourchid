@@ -10,18 +10,18 @@ import { useState } from "react";
 
 function App() {
 
-const [project,setProject] = useState ("");
-const [slogan,setslogan] = useState ("");
+const [project,setProject] = useState ("Elegant Workspace");
+const [slogan,setSlogan] = useState ("Exclusive designs");
 const [repo,setRepo] = useState ("");
 const [demo,setDemo] = useState ("");
-const [tecno,setTecno] = useState ("");
-const [desc,setDesc] = useState ("");
-const [nameAuthor,setNameAuthor] = useState ("");
-const [job,setJob] = useState ("");
+const [tecno,setTecno] = useState ("React JS, MongoDB");
+const [desc,setDesc] = useState ("Lorem, ipsum dolor sit amet consectetur adipisicing elit.Libero, delectus? Voluptates at hic aliquam porro ad suscipitharum laboriosam saepe earum doloribus aperiam, ullam culpaaccusantium placeat odit corrupti ipsum!");
+const [nameAuthor,setNameAuthor] = useState ("Emmelie Björklund");
+const [job,setJob] = useState ("Full Stack Developer");
 
 
 // const handleProject = (ev) => {
-//   setProject(ev.target.value);
+//   if (ev.targe.value === "") setProject(ev.target.value);
 // };
 
   return (
@@ -41,7 +41,8 @@ const [job,setJob] = useState ("");
         </div>
       </header> */}
       <main className="main">
-        <Card/> 
+        <Card slogan={slogan} project={project} tecno={tecno} desc= {desc} nameAuthor= {nameAuthor}
+          job= {job} /> 
         {/* <section className="preview">   
           <img className="image" src= {cover} alt="" />
 
@@ -70,7 +71,7 @@ const [job,setJob] = useState ("");
             </section>
           </section>
         </section> */}
-        <Form setProject={setProject} setslogan={setslogan} setRepo={setRepo} setDemo={setDemo}
+        <Form setProject={setProject} setSlogan={setSlogan} setRepo={setRepo} setDemo={setDemo}
         setTecno= {setTecno} setDesc={setDesc} setNameAuthor={setNameAuthor} setJob= {setJob} />
         {/* <section className="form">
           <h2 className="title">Información</h2>

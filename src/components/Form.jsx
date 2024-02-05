@@ -1,6 +1,6 @@
 
 
-function Form({setProject, setslogan, setRepo, setDemo, setTecno, setDesc, setNameAuthor, setJob}) {
+function Form({setProject, setSlogan, setRepo, setDemo, setTecno, setDesc, setNameAuthor, setJob}) {
   return (
     <>
       <section className="form">
@@ -27,7 +27,7 @@ function Form({setProject, setslogan, setRepo, setDemo, setTecno, setDesc, setNa
               name="slogan"
               id="slogan"
               placeholder="Slogan"
-              onChange={(ev) => {setslogan (ev.target.value)}}
+              onChange={(ev) => {setSlogan (ev.target.value)}}
             />
             <input
               className="input"
