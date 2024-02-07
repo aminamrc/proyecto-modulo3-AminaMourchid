@@ -19,6 +19,14 @@ const [desc,setDesc] = useState ("Lorem, ipsum dolor sit amet consectetur adipis
 const [nameAuthor,setNameAuthor] = useState ("Emmelie Björklund");
 const [job,setJob] = useState ("Full Stack Developer");
 
+// const [dataForm, setDataForm] = useState ({});
+
+
+
+// const handleForm = (ev) => {
+//   ev.preventDefault()
+// }
+
 
 // const handleProject = (ev) => {
 //   if (ev.targe.value === "") setProject(ev.target.value);
