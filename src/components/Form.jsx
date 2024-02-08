@@ -1,10 +1,12 @@
 
 
-function Form({dataForm, setDataForm }) {
+function Form({dataForm, setDataForm, fillForm}) {
 
 
   const handleInput= (ev)=> {
-    setDataForm (ev.target.value)
+    const inputId= (ev.target.id)
+    const inputValue=(ev.target.value)
+    fillForm (inputId, inputValue)
   }
 
   return (
@@ -60,7 +62,7 @@ function Form({dataForm, setDataForm }) {
               type="text"
               placeholder="Tecnologías"
               name="technologies"
-              id="technologies"
+              id="tecno"
               value={dataForm.tecno}
               onChange= {handleInput}
             />
@@ -88,7 +90,7 @@ function Form({dataForm, setDataForm }) {
               type="text"
               placeholder="Nombre"
               name="autor"
-              id="autor"
+              id="author"
               value= {dataForm.author}
               onChange= {handleInput}
             />
