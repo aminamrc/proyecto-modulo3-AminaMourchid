@@ -19,7 +19,24 @@ const [desc,setDesc] = useState ("Lorem, ipsum dolor sit amet consectetur adipis
 const [nameAuthor,setNameAuthor] = useState ("Emmelie Björklund");
 const [job,setJob] = useState ("Full Stack Developer");
 
-// const [dataForm, setDataForm] = useState ({});
+const [dataForm, setDataForm] = useState ({
+  project: "Elegant Workspace",
+  slogan: "Exclusive designs",
+  repo: "",
+  demo:"",
+  tecno: "React JS, MongoDB",
+  desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.Libero, delectus? Voluptates at hic aliquam porro ad suscipitharum laboriosam saepe earum doloribus aperiam, ullam culpaaccusantium placeat odit corrupti ipsum!",
+  author: "Emmelie Björklund",
+  job: "Full Stack Developer",
+
+});
+
+
+// const fillForm = (ev) => {
+//   setDataForm ( dataForm.project : ev.target.
+
+//  console.log (dataForm) )}
+
 
 
 
@@ -79,8 +96,7 @@ const [job,setJob] = useState ("Full Stack Developer");
             </section>
           </section>
         </section> */}
-        <Form setProject={setProject} setSlogan={setSlogan} setRepo={setRepo} setDemo={setDemo}
-        setTecno= {setTecno} setDesc={setDesc} setNameAuthor={setNameAuthor} setJob= {setJob} />
+        <Form dataForm={dataForm} setDataForm = {setDataForm }  />
         {/* <section className="form">
           <h2 className="title">Información</h2>
 

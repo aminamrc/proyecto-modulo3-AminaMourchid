@@ -1,7 +1,14 @@
 
 
-function Form({setProject, setSlogan, setRepo, setDemo, setTecno, setDesc, setNameAuthor, setJob}) {
+function Form({dataForm, setDataForm }) {
+
+
+  const handleInput= (ev)=> {
+    setDataForm (ev.target.value)
+  }
+
   return (
+
     <>
       <section className="form">
           <h2 className="title">Información</h2>
@@ -18,8 +25,8 @@ function Form({setProject, setSlogan, setRepo, setDemo, setTecno, setDesc, setNa
               placeholder="Nombre del proyecto"
               name="name"
               id="name"
-              onChange= {(ev) => {
-                setProject(ev.target.value) }}
+              value= {dataForm.project}
+              onChange= {handleInput}
             />
             <input
               className="input"
@@ -27,7 +34,8 @@ function Form({setProject, setSlogan, setRepo, setDemo, setTecno, setDesc, setNa
               name="slogan"
               id="slogan"
               placeholder="Slogan"
-              onChange={(ev) => {setSlogan (ev.target.value)}}
+              value={dataForm.slogan}
+              onChange= {handleInput}
             />
             <input
               className="input"
@@ -35,7 +43,8 @@ function Form({setProject, setSlogan, setRepo, setDemo, setTecno, setDesc, setNa
               name="repo"
               id="repo"
               placeholder="Repo"
-              onChange={(ev) => {setRepo(ev.target.value)}}
+              value={dataForm.repo}
+              onChange= {handleInput}
             />
             <input
               className="input"
@@ -43,7 +52,8 @@ function Form({setProject, setSlogan, setRepo, setDemo, setTecno, setDesc, setNa
               placeholder="Demo"
               name="demo"
               id="demo"
-              onChange={(ev) => {setDemo(ev.target.value)}} 
+              value= {dataForm.demo}
+              onChange= {handleInput}
             />
             <input
               className="input"
@@ -51,7 +61,8 @@ function Form({setProject, setSlogan, setRepo, setDemo, setTecno, setDesc, setNa
               placeholder="Tecnologías"
               name="technologies"
               id="technologies"
-              onChange={(ev) => {setTecno(ev.target.value)}}  
+              value={dataForm.tecno}
+              onChange= {handleInput}
             />
             <textarea
               className="textarea"
@@ -59,7 +70,8 @@ function Form({setProject, setSlogan, setRepo, setDemo, setTecno, setDesc, setNa
               placeholder="Descripción"
               name="desc"
               id="desc"
-              onChange={(ev) => {setDesc(ev.target.value)}}  
+              value= {dataForm.desc}
+              onChange= {handleInput}
             >
 
             </textarea>
@@ -77,7 +89,8 @@ function Form({setProject, setSlogan, setRepo, setDemo, setTecno, setDesc, setNa
               placeholder="Nombre"
               name="autor"
               id="autor"
-              onChange={(ev) => {setNameAuthor(ev.target.value)}}  
+              value= {dataForm.author}
+              onChange= {handleInput}
             />
             <input
               className="input"
@@ -85,7 +98,8 @@ function Form({setProject, setSlogan, setRepo, setDemo, setTecno, setDesc, setNa
               placeholder="Trabajo"
               name="job"
               id="job"
-              onChange={(ev) => {setJob(ev.target.value)}}  
+              value= {dataForm.job}
+              onChange= {handleInput}
             />
           </fieldset>
 
