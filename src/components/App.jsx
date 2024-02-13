@@ -10,14 +10,7 @@ import { useState } from "react";
 
 function App() {
 
-// const [project,setProject] = useState ("Elegant Workspace");
-// const [slogan,setSlogan] = useState ("Exclusive designs");
-// const [repo,setRepo] = useState ("");
-// const [demo,setDemo] = useState ("");
-// const [tecno,setTecno] = useState ("React JS, MongoDB");
-// const [desc,setDesc] = useState ("Lorem, ipsum dolor sit amet consectetur adipisicing elit.Libero, delectus? Voluptates at hic aliquam porro ad suscipitharum laboriosam saepe earum doloribus aperiam, ullam culpaaccusantium placeat odit corrupti ipsum!");
-// const [nameAuthor,setNameAuthor] = useState ("Emmelie Björklund");
-// const [job,setJob] = useState ("Full Stack Developer");
+
 
 const [dataForm, setDataForm] = useState ({
   project: "", //Elegant Workspace
@@ -35,19 +28,6 @@ const [dataForm, setDataForm] = useState ({
 const fillForm = (key, value) => {
 setDataForm ({ ...dataForm, [key]: value}) }
 
-//  console.log (dataForm) )}
-
-
-
-
-// const handleForm = (ev) => {
-//   ev.preventDefault()
-// }
-
-
-// const handleProject = (ev) => {
-//   if (ev.targe.value === "") setProject(ev.target.value);
-// };
 
   return (
   <>
