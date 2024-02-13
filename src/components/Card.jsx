@@ -1,11 +1,11 @@
 import cover from '../images/cover.jpeg';
 import user from '../images/user.jpeg';
 
-function Card({ dataForm}) {
+function Card({ dataForm, avatar, userPhoto}) {
   return (
     <>
        <section className="preview">
-          <img className="image" src= {cover} alt="" />
+          <img className="image" src= {avatar ||cover} alt="" />
 
           <section className="autor">
             <section className="info-project">
@@ -23,7 +23,7 @@ function Card({ dataForm}) {
             </section>
 
             <section className="info-autor">
-              <img className="image" src={user} alt="" />
+              <img className="image" src={ userPhoto || user} alt="" />
               <p className="job"> {dataForm.job  || "Full Stack Developer"} </p>
               <p className="name"> {dataForm.author  || "Emmelie Björklund"} </p>
             </section>

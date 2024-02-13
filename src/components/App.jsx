@@ -24,6 +24,17 @@ const [dataForm, setDataForm] = useState ({
 
 });
 
+const [avatar, setAvatar] = useState ("");
+
+const updateAvatar = (avatar) => {
+  setAvatar (avatar)
+};
+
+const [userPhoto, setUserPhoto] = useState ("");
+const updateUserPhoto = (userPhoto) => {
+  setUserPhoto (userPhoto)
+}
+
 
 const fillForm = (key, value) => {
 setDataForm ({ ...dataForm, [key]: value}) }
@@ -36,9 +47,8 @@ setDataForm ({ ...dataForm, [key]: value}) }
        <Header/>
      
       <main className="main">
-        <Card dataForm={dataForm} /> 
-        
-        <Form dataForm={dataForm} setDataForm = {setDataForm } fillForm= {fillForm} />
+        <Card dataForm={dataForm}  avatar={avatar} userPhoto= {userPhoto} />  
+        <Form dataForm={dataForm} setDataForm = {setDataForm } fillForm= {fillForm} updateAvatar = {updateAvatar} updateUserPhoto = {updateUserPhoto} avatar={avatar} userPhoto= {userPhoto} />
         
       
     

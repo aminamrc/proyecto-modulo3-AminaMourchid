@@ -1,6 +1,7 @@
+import GetAvatar from "./GetAvatar"
 
 
-function Form({dataForm, setDataForm, fillForm}) {
+function Form({dataForm, setDataForm, fillForm, avatar, updateAvatar, userPhoto, updateUserPhoto}) {
 
 
   const handleInput= (ev)=> {
@@ -106,9 +107,12 @@ function Form({dataForm, setDataForm, fillForm}) {
           </fieldset>
 
           <section className="buttons-img">
-            <button className="btn">Subir foto de proyecto</button>
-            <button className="btn">Subir foto de autora</button>
+            <GetAvatar avatar= {avatar} updateAvatar={updateAvatar} text="Subir foto de proyecto"/>
+            {/* <button className="btn">Subir foto de proyecto</button>
+            <button className="btn">Subir foto de autora</button> */}
+            <GetAvatar userPhoto= {userPhoto} updateUserPhoto={updateUserPhoto} text="Subir foto de autora"/>
           </section>
+
           <section className="buttons-img">
             <button className="btn-large" onClick="{handleClickCreateCard}">
               Crear Tarjeta
