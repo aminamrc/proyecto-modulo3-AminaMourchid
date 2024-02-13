@@ -11,7 +11,7 @@
   
   .container {
     background-color: #302c42;
-    height: 150vh;
+    height: 130vh;
     padding: 20px;
   
    
@@ -29,7 +29,7 @@
   .main {
     display: flex;
     padding-top: 50px;
-    height: 100vh;
+    height: 80vh;
   }
   .main .title {
     color: #ffffff;
@@ -130,7 +130,7 @@
   .main .preview .autor {
     background-color: white;
     color: #3e3e3e;
-    width: 90%;
+    width: 80%;
     height: 50%;
     transform: translateY(-100px);
     margin: auto;
@@ -233,7 +233,7 @@
   
   .footer {
     background-color: #302c42;
-    
+    padding: 20px;
     display: flex;
     justify-content: right;
   }
