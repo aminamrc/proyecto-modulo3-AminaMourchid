@@ -32,8 +32,8 @@ const [dataForm, setDataForm] = useState ({
 });
 
 
-const fillForm = (ev) => {
-setDataForm ([inputId] = inputValue) }
+const fillForm = (key, value) => {
+setDataForm ({ ...dataForm, [key]: value}) }
 
 //  console.log (dataForm) )}
 
@@ -66,8 +66,7 @@ setDataForm ([inputId] = inputValue) }
         </div>
       </header> */}
       <main className="main">
-        <Card slogan={slogan} project={project} tecno={tecno} desc= {desc} nameAuthor= {nameAuthor}
-          job= {job} /> 
+        <Card dataForm={dataForm} /> 
         {/* <section className="preview">   
           <img className="image" src= {cover} alt="" />
 

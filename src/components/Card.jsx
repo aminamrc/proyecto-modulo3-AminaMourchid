@@ -1,7 +1,7 @@
 import cover from '../images/cover.jpeg';
 import user from '../images/user.jpeg';
 
-function Card({ project, slogan, tecno, desc, nameAuthor, job}) {
+function Card({ dataForm}) {
   return (
     <>
        <section className="preview">
@@ -12,20 +12,20 @@ function Card({ project, slogan, tecno, desc, nameAuthor, job}) {
               <p className="subtitle">Personal Project Card</p>
               <hr className="line" />
 
-              <h2 className="title" > {project} </h2>
-              <p className="slogan"> {slogan}  </p>
-              <p className="desc"> {desc}
+              <h2 className="title" > {dataForm.project} </h2>
+              <p className="slogan"> {dataForm.slogan}  </p>
+              <p className="desc"> {dataForm.desc}
                 
               </p>
               <section className="technologies">
-                <p className="text"> {tecno} </p>
+                <p className="text"> {dataForm.tecno} </p>
               </section>
             </section>
 
             <section className="info-autor">
               <img className="image" src={user} alt="" />
-              <p className="job"> {job} </p>
-              <p className="name"> {nameAuthor} </p>
+              <p className="job"> {dataForm.job} </p>
+              <p className="name"> {dataForm.author} </p>
             </section>
           </section>
         </section>
