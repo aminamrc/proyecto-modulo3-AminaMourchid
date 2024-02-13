@@ -2,7 +2,7 @@ import logo from '../images/logo.png';
 
 function Footer() {
   return (
-    <div>
+    <div className= "footer">
        <footer>
         <img src={logo} alt="" />
       </footer>

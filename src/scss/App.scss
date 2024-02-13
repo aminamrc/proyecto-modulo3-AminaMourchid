@@ -5,18 +5,21 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    
+    
   }
   
   .container {
     background-color: #302c42;
-    height: 100vh;
+    height: 150vh;
     padding: 20px;
+  
+   
   }
   
   .header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
   }
   
   .header .text {
@@ -26,11 +29,12 @@
   .main {
     display: flex;
     padding-top: 50px;
-    height: 80vh;
+    height: 100vh;
   }
   .main .title {
     color: #ffffff;
     text-align: center;
+
   }
   
   .main .ask-info {
@@ -130,7 +134,7 @@
     height: 50%;
     transform: translateY(-100px);
     margin: auto;
-    border-radius: 20px;
+    border-radius: 50px;
     display: flex;
     flex-direction: row-reverse;
     gap: 40px;
@@ -220,9 +224,28 @@
     color: white;
     text-align: center;
     padding: 20px;
+  
   }
   
   .hidden {
     display: none;
   }
   
+  .footer {
+    background-color: #302c42;
+    
+    display: flex;
+    justify-content: right;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
