@@ -25,8 +25,8 @@ function Form({dataForm, setDataForm, fillForm}) {
               className="input"
               type="text"
               placeholder="Nombre del proyecto"
-              name="name"
-              id="name"
+              name="project"
+              id="project"
               value= {dataForm.project}
               onChange= {handleInput}
             />

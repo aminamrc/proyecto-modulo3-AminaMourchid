@@ -12,20 +12,20 @@ function Card({ dataForm}) {
               <p className="subtitle">Personal Project Card</p>
               <hr className="line" />
 
-              <h2 className="title" > {dataForm.project} </h2>
-              <p className="slogan"> {dataForm.slogan}  </p>
-              <p className="desc"> {dataForm.desc}
+              <h2 className="title" > {dataForm.project || "Elegant Workspace"} </h2>
+              <p className="slogan"> {dataForm.slogan || "Exclusive designs"}  </p>
+              <p className="desc"> {dataForm.desc ||  "Lorem, ipsum dolor sit amet consectetur adipisicing elit.Libero, delectus? Voluptates at hic aliquam porro ad suscipitharum laboriosam saepe earum doloribus aperiam, ullam culpaaccusantium placeat odit corrupti ipsum!"}
                 
               </p>
               <section className="technologies">
-                <p className="text"> {dataForm.tecno} </p>
+                <p className="text"> {dataForm.tecno || "React JS, MongoDB"} </p>
               </section>
             </section>
 
             <section className="info-autor">
               <img className="image" src={user} alt="" />
-              <p className="job"> {dataForm.job} </p>
-              <p className="name"> {dataForm.author} </p>
+              <p className="job"> {dataForm.job  || "Full Stack Developer"} </p>
+              <p className="name"> {dataForm.author  || "Emmelie Björklund"} </p>
             </section>
           </section>
         </section>
